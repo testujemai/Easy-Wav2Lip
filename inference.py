@@ -721,10 +721,6 @@ def main():
 
             f[y1:y2, x1:x2] = p
 
-                key = cv2.waitKey(1) & 0xFF
-                if key == ord('q'):
-                    exit()  # Exit the loop when 'Q' is pressed
-
             if str(args.preview_settings) == "True":
                 cv2.imwrite("temp/preview.jpg", f)
             else:
