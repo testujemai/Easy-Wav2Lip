@@ -55,10 +55,7 @@ batch_process = config.getboolean('OTHER', 'batch_process')
 output_suffix = config['OTHER']['output_suffix']
 include_settings_in_suffix = config.getboolean('OTHER', 'include_settings_in_suffix')
 
-if g_colab():
-    preview_input = config.getboolean("OTHER", "preview_input")
-else:
-    preview_input = False
+preview_input = config.getboolean("OTHER", "preview_input")
 preview_settings = config.getboolean("OTHER", "preview_settings")
 frame_to_preview = config.getint("OTHER", "frame_to_preview")
 
